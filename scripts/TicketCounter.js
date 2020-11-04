@@ -7,7 +7,6 @@ let totalTickets = 0
 const ticketPurchased = () => {
     totalTickets++
 
-    contentTarget.innerHTML = `Total tickets purchased: ${totalTickets}`
 }
 
 export const TicketCounter = () => {
