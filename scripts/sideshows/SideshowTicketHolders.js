@@ -7,6 +7,11 @@ export const SideshowTicketHolders = () => {
         <div class="person gawker"></div>
         `
     })
+    eventHub.addEventListener("bigSpenderTicketPurchased", clickEvent => {
+        contentTarget.innerHTML += `
+        <div class="person bigSpender"></div>
+        `
+    })
 }
 
 // const render = (rideTicket) => {

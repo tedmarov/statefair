@@ -7,6 +7,11 @@ export const GameTicketHolders = () => {
         <div class="person player"></div>
         `
     })
+    eventHub.addEventListener("bigSpenderTicketPurchased", clickEvent => {
+        contentTarget.innerHTML += `
+        <div class="person bigSpender"></div>
+        `
+    })
 }
 
 // const render = (rideTicket) => {
