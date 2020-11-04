@@ -21,7 +21,7 @@ eventHub.addEventListener("click", clickEvent => {
             }
     }); eventHub.dispatchEvent(gameEvent) }
     else if (clickEvent.target.id === "sideshowTicket") {
-        const gameEvent = new CustomEvent("sideshowTicketPurchased", {
+        const sideshowEvent = new CustomEvent("sideshowTicketPurchased", {
         detail: {
             clickedButton: clickEvent.target.id
             }
@@ -36,7 +36,7 @@ export const TicketBooth = () => {
             <button id="rideTicket">Ride Ticket</button>
             <button id="foodTicket">Food Ticket</button>
             <button id="gameTicket">Game Ticket</button>
-            <button id="sideshowTicket>Sideshow Ticket</button>
+            <button id="sideshowTicket">Sideshow Ticket</button>
         </div>
     `
 }
