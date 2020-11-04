@@ -11,7 +11,7 @@ export const FoodTicketHolders = () => {
         contentTarget.innerHTML += `
         <div class="person bigSpender"></div>
         `
-    })  
+    })
 }
 
 // const render = (rideTicket) => {
